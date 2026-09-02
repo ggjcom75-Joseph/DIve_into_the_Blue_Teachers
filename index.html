@@ -7,6 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+		 <!-- 표 안의 글자가 세로로 찌그러지지 않게 방지 -->
+		table th, table td {
+   	 	white-space: nowrap !important;
+   	 	word-break: keep-all !important;
+	     }
+
+	<!-- 핸드폰에서 표를 좌우로 손가락으로 밀어서 볼 수 있게 설정 -->
+		table-responsive, .table-container, table {
+    		display: block;
+    		overflow-x: auto;
+    		-webkit-overflow-scrolling: touch;
+	     }		
+
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
         body { font-family: 'Noto Sans KR', sans-serif; }
         
